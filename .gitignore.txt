@@ -1,0 +1,13 @@
+EscapeGame/Temp
+EscapeGame/Library
+EscapeGame/Obj
+EscapeGame/UnityGenerated
+EscapeGame/Build
+EscapeGame/Builds
+EscapeGame/*.sln
+EscapeGame/Assembly-CSharp.csproj
+*.suo
+*.user
+*.userprefs
+*.blend1
+*.blend1.meta
