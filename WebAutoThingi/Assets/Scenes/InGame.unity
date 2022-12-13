@@ -123,6 +123,50 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &101856260
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 101856262}
+  - component: {fileID: 101856261}
+  m_Layer: 0
+  m_Name: AccMan
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &101856261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101856260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d59c4b9e96ae4cd4b885e3499e448a88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GivName: {fileID: 0}
+--- !u!4 &101856262
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101856260}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 195.49896, y: 175.09299, z: -33.164772}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &220480193
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,6 +250,65 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &227798061
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 227798063}
+  - component: {fileID: 227798062}
+  m_Layer: 0
+  m_Name: NameCOinMan
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &227798062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227798061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f3166100d10974e84234e6db2f4678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MenuName: {fileID: 0}
+  MenuCoin: {fileID: 0}
+  ShopName: {fileID: 0}
+  ShopCoin: {fileID: 0}
+  PlayName: {fileID: 0}
+  PlayCoin: {fileID: 0}
+  ProfileName: {fileID: 0}
+  ProfilCoin: {fileID: 0}
+  ProfBoxName: {fileID: 0}
+  LeaderName: {fileID: 0}
+  LeaderCoin: {fileID: 0}
+  QuizName: {fileID: 6412718096889476299}
+  QuizCoin: {fileID: 7857594803586966557}
+  EndName: {fileID: 3710285128509676966}
+  EndCoin: {fileID: 4950234351566308101}
+  accMan: {fileID: 101856261}
+--- !u!4 &227798063
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227798061}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 195.49896, y: 175.09299, z: -33.164772}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &301799018
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,6 +342,7 @@ MonoBehaviour:
   ans2: {fileID: 8366648764673858154}
   ans3: {fileID: 8817092650781945082}
   ans4: {fileID: 360755828956787028}
+  accMan: {fileID: 101856261}
 --- !u!4 &301799020
 Transform:
   m_ObjectHideFlags: 0

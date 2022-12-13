@@ -13,8 +13,17 @@ public class PanelManager : MonoBehaviour
     public GameObject ShopPanel;
     public GameObject ProfilPanel;
     public GameObject PlayMenu;
+    public GameObject NameMenu;
     #endregion
-
+    public AccountManager AccMan;
+    void Start()
+    {
+        if(AccMan.GetName() != "")
+        {
+            CloseName();
+            OpenTheMenu();
+        }
+    }
     public void CloseShopPanel()
     {
         ShopPanel.SetActive(false);
@@ -55,5 +64,13 @@ public class PanelManager : MonoBehaviour
     public void ClosePlay()
     {
         PlayMenu.SetActive(false);
+    }
+    public void OpenName()
+    {
+        NameMenu.SetActive(true);
+    }
+    public void CloseName()
+    {
+        NameMenu.SetActive(false);
     }
 }

@@ -12,6 +12,7 @@ public class EndGamePanelMan : MonoBehaviour
     public Button ans3;
     public Button ans4;
     #endregion
+    public AccountManager accMan;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +26,7 @@ public class EndGamePanelMan : MonoBehaviour
     }
     public void SetTheColorButton(bool[] goodorbad)
     {
+        //int counter = 0;
         ans1.GetComponent<Image>().color = Color.red;
         ans2.GetComponent<Image>().color = Color.red;
         ans3.GetComponent<Image>().color = Color.red;
@@ -37,5 +39,7 @@ public class EndGamePanelMan : MonoBehaviour
             ans3.GetComponent<Image>().color = Color.green;
         if(goodorbad[3])
             ans4.GetComponent<Image>().color = Color.green;
+
+        accMan.GiveCoinsToSession(1);
     }
 }
