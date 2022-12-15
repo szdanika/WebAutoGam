@@ -39,10 +39,11 @@
      <Compile Include="Assets\Scripts\EndGamePanelMan.cs" />
      <Compile Include="Assets\Scripts\PanelManager.cs" />
      <Compile Include="Assets\Scripts\AccountManager.cs" />
+     <Compile Include="Assets\Scripts\ChangeNameAndCoin.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\SceneChanger.cs" />
      <Compile Include="Assets\Scripts\Questions.cs" />
-     <Compile Include="Assets\Scripts\ChangeNameAndCoin.cs" />
+     <Compile Include="Assets\Scripts\LeaderBoard.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

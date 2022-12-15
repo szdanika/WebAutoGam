@@ -49,7 +49,7 @@ public class ChangeNameAndCoin : MonoBehaviour
             SetName(ShopName);
             SetName(PlayName);
             SetName(ProfileName);
-            SetName(ProfBoxName);
+            //SetName(ProfBoxName);
             SetName(LeaderName);
 
             SetCoin(MenuCoin);

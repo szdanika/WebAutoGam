@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.IO;
 
 public class AccountManager : MonoBehaviour
 {
@@ -43,6 +44,7 @@ public class AccountManager : MonoBehaviour
 
     void SetCorrentProf(string Name, int coins)
     {
+        WriteNameToFile(Name);
         PlayerPrefs.SetString("correntName",Name);
         PlayerPrefs.SetInt("correntCoins",coins);
     }
@@ -75,5 +77,15 @@ public class AccountManager : MonoBehaviour
         PlayerPrefs.SetInt("correntCoins",0);
         scChan.ToMenu();
     }
-
+    public void WriteNameToFile(string name)
+    {
+        string text = System.IO.File.ReadAllText("Names.txt");
+        if(!text.Contains(name))
+            text += name+";";
+        File.WriteAllText("Names.txt",text);
+    }
+    public int GetCoinNumberFromName(string name)
+    {
+        return PlayerPrefs.GetInt(name);
+    }
 }
